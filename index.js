@@ -10,6 +10,8 @@ app.get('/', (req,res) => {
   res.send("Hello World, Please check your email");
 });
 
+// get your user code and password from nodemailer
+// this is my keys
 const transporter = nodemailer.createTransport({
     host: "smtp.mailtrap.io",
     port: 2525,
@@ -20,8 +22,8 @@ const transporter = nodemailer.createTransport({
   });
 
 let mailOptions = {
-  from: 'olukeye1987@gmail.com',
-  to: 'seunolukeye2000@gmail.com', // you can add multiple receiver here 
+  from: 'sender@gmail.com',
+  to: 'receiver@gmail.com', // you can add multiple receiver here 
   subject: 'Sending Email using Node.js',
   html:' <h1>WELCOM TO OUR NEWS LETTER!</h1><p>We hope to give you the best service ...</p>'
 };
