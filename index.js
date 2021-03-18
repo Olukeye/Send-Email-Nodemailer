@@ -5,7 +5,7 @@ const app = express();
 const route = express.Router()
 
 
-
+// you can add whatever template you wish to the front end....
 app.get('/', (req,res) => {
   res.send("Hello World, Please check your email");
 });
